@@ -10,14 +10,14 @@ pub struct BPlusTree {
     pub internal_max_size: usize,
 }
 
-impl BPlusTree {
-    pub fn new() -> Self {
-        let root_page_id = 0;
-
-
-        Self {
-            root_page_id,
-            pages: HashMap::new()
-        }
-    }
-}
+// impl BPlusTree {
+//     pub fn new() -> Self {
+//         let root_page_id = 0;
+//
+//
+//         Self {
+//             root_page_id,
+//             pages: HashMap::new()
+//         }
+//     }
+// }

@@ -19,7 +19,7 @@ impl PartialOrd for Tuple {
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
         let column_count = self.schema.column_count();
         for idx in 0..column_count {
-            // iterate value in each
+            // iterate value in each column
             let order = self.value(idx).ok()?.partial_cmp(other.value(idx).ok()?)?;
             if order == Ordering::Equal {
                 continue;
