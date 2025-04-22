@@ -1,6 +1,6 @@
-pub mod column;
 pub mod global;
+pub mod btree;
+pub mod buffer;
+pub mod disk_manager;
 pub mod page;
-mod btree;
-mod schema;
-mod tuple;
+pub mod table_component;
