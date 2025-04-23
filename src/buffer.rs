@@ -1,4 +1,4 @@
 mod buffer_pool;
 
 mod replacer;
-mod page;
+pub mod frame;

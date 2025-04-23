@@ -1,9 +1,9 @@
 use std::cmp::Ordering::Equal;
 use std::sync::Arc;
 use crate::global::{InternalKV, LeafKV, PageId, RecordId, SchemaRef, INVALID_PAGE_ID};
-use crate::schema::Schema;
-use crate::tuple::Tuple;
 use anyhow::{bail, Result};
+use crate::table_component::schema::Schema;
+use crate::table_component::tuple::Tuple;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum BPlusTreePageType {

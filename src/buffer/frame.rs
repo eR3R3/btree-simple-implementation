@@ -2,7 +2,7 @@ use derive_with::With;
 use crate::global::{PageId, PAGE_SIZE};
 
 #[derive(Debug, Clone, With)]
-pub struct Page {
+pub struct Frame {
     pub page_id: PageId,
     data: [u8; PAGE_SIZE],
     // 被引用次数

@@ -1,7 +1,7 @@
 use std::cmp::Ordering;
-use crate::column::ScalarValue;
 use crate::global::SchemaRef;
 use anyhow::{anyhow, Result};
+use crate::table_component::column::ScalarValue;
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Tuple {
